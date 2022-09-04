@@ -1,0 +1,10 @@
+make: Entering directory '/home/zach/桌面/my_malloc/Heap Memory Manager'
+mkdir -p output
+gcc -Wall -Wextra -g -Iinclude -c src/glthread.c  -o src/glthread.o
+gcc -Wall -Wextra -g -Iinclude -c src/main.c  -o src/main.o
+gcc -Wall -Wextra -g -Iinclude -c src/mm.c  -o src/mm.o
+gcc -Wall -Wextra -g -Iinclude -c src/test/testapp.c  -o src/test/testapp.o
+gcc -Wall -Wextra -g -Iinclude -o output/main src/glthread.o src/main.o src/mm.o src/test/testapp.o  -Llib
+echo Executing 'all' complete!
+make: Leaving directory '/home/zach/桌面/my_malloc/Heap Memory Manager'
+ 
